@@ -1737,6 +1737,7 @@ ul {
   align-items: center;
   flex-basis: 50%;
   color: var(--white-color);
+  animation: change-background 10s linear infinite;
   z-index: 1;
 }
 .discount .image::before {
@@ -1912,6 +1913,16 @@ ul {
     opacity: 0;
     width: 200%;
     height: 200%;
+  }
+}
+
+@keyframes change-background {
+  0%,
+  100% {
+    background-image: url(../img/discount-background1.jpg);
+  }
+  50% {
+    background-image: url(../img/discount-background2.jpg);
   }
 }
 /* end animation */
